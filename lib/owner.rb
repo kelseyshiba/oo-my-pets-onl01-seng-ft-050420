@@ -45,7 +45,7 @@ class Owner
     if cats.find {|cat| cat.name == name}
        cats.find {|cat| cat.name == name}
     else
-      buy = Cat.new(name)
+      buy = Cat.new(name, self)
     end
     # if Cat.all.find {|cat| cat.name == name}
     #     Cat.all.find {|cat| cat.name == name}
