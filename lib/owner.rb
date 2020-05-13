@@ -43,7 +43,7 @@ class Owner
   
   def buy_cat(name)
     if Cat.all.find {|cat| cat.name == name}
-        Cat.all.count {|cat| cat.name == name}
+        Cat.all.find {|cat| cat.name == name}
     else
       new_cat = Cat.new(name)
     end
