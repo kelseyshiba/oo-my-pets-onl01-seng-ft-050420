@@ -55,6 +55,10 @@ class Owner
   end
   
   def buy_dog(name)
+    if dogs.find {|dog| dog.name == name}
+      dogs.find {|dog| dog.name == name}
+    else
+      buy_dog = Dog.new(name, self)
   end
   
   def walk_dogs
