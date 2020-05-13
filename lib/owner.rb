@@ -50,7 +50,7 @@ class Owner
     # if Cat.all.find {|cat| cat.name == name}
     #     Cat.all.find {|cat| cat.name == name}
     # else
-    #   new_cat = Cat.new(name)
+    #   new_cat = Cat.new(name, self)
     # end
   end
   
