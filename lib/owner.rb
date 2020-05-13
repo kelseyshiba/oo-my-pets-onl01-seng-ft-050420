@@ -42,11 +42,16 @@ class Owner
   end
   
   def buy_cat(name)
-    if Cat.all.find {|cat| cat.name == name}
-        Cat.all.find {|cat| cat.name == name}
+    if cats.find {|cat| cat.name == name}
+       cats.find {|cat| cat.name == name}
     else
-      new_cat = Cat.new(name)
+      buy = Cat.new(name)
     end
+    # if Cat.all.find {|cat| cat.name == name}
+    #     Cat.all.find {|cat| cat.name == name}
+    # else
+    #   new_cat = Cat.new(name)
+    # end
   end
   
   def buy_dog(name)
